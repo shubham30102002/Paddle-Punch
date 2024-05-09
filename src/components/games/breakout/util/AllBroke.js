@@ -16,9 +16,12 @@ export default function AllBroken(bricks, player, canvas, ballObj) {
     }
     if (total === bricks.length) {
         player.level++;
-        if (player.lives<=3){
-        player.lives+=2;
+        if (player.lives === 4) {
+            player.lives += 1;
+        } else if (player.lives <= 3) {
+            player.lives += 2;
         }
+
         ResetBall(ballObj, canvas, paddleProps);
         brickObj.y = 50;
     }

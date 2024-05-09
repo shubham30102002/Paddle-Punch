@@ -10,6 +10,8 @@ import PlayerStats from "./PlayerStats";
 import AllBroken from "./util/AllBroke";
 import ResetBall from "./util/ResetBall";
 
+// This code defines a React component `Board` for a game. It uses a canvas element to render game elements like bricks, paddle, and ball. The game logic includes handling ball movement, collisions with walls, bricks, and the paddle. It also manages player stats like lives, levels, and scores, resetting the game when lives reach zero. The game loop is controlled using `requestAnimationFrame` for continuous rendering and updates.
+
 let bricks = [];
 let { ballObj, paddleProps, brickObj, player } = data;
 
